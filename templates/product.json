@@ -44,16 +44,8 @@
                 "trust_badges_enhanced": {
                     "type": "text",
                     "settings": {
-                        "badge_1": "🚚 Livraison rapide sous 24/48h",
-                        "badge_2": "🔒 Paiement 100% sécurisé",
-                        "badge_3": "💳 Paiement en 3x sans frais",
-                        "badge_4": "✨ Satisfait ou remboursé sous 30j",
-                        "style": "modern",
-                        "layout": "vertical",
-                        "color_scheme": "scheme-1",
-                        "padding": 15,
-                        "show_border": true,
-                        "show_shadow": false
+                        "text": "🚚 Livraison rapide sous 24/48h\n\n🔒 Paiement 100% sécurisé\n\n💳 Paiement en 3x sans frais\n\n✨ Satisfait ou remboursé sous 30j",
+                        "text_style": "body"
                     }
                 },
                 "stock_status": {
