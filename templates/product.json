@@ -43,10 +43,74 @@
                 },
                 "trust_badges_enhanced": {
                     "type": "text",
-                    "settings": {
-                        "text": "✈️ Livraison 24/48h\n🔒 Paiement 100% sécurisé\n✅ Satisfait ou remboursé\n💯 Garantie authenticité",
-                        "text_style": "body"
-                    }
+                    "settings": [
+                        {
+                            "type": "text",
+                            "id": "badge_1",
+                            "label": "Badge 1",
+                            "default": "✈️ Livraison 24/48h"
+                        },
+                        {
+                            "type": "text",
+                            "id": "badge_2",
+                            "label": "Badge 2",
+                            "default": "🔒 Paiement 100% sécurisé"
+                        },
+                        {
+                            "type": "text",
+                            "id": "badge_3",
+                            "label": "Badge 3",
+                            "default": "✅ Satisfait ou remboursé"
+                        },
+                        {
+                            "type": "text",
+                            "id": "badge_4",
+                            "label": "Badge 4",
+                            "default": "💯 Garantie authenticité"
+                        },
+                        {
+                            "type": "select",
+                            "id": "style",
+                            "label": "Style des badges",
+                            "options": [
+                                {
+                                    "value": "simple",
+                                    "label": "Simple"
+                                },
+                                {
+                                    "value": "bordered",
+                                    "label": "Avec bordure"
+                                },
+                                {
+                                    "value": "filled",
+                                    "label": "Fond coloré"
+                                }
+                            ],
+                            "default": "simple"
+                        },
+                        {
+                            "type": "color",
+                            "id": "background_color",
+                            "label": "Couleur de fond",
+                            "default": "#f9f9f9"
+                        },
+                        {
+                            "type": "color",
+                            "id": "text_color",
+                            "label": "Couleur du texte",
+                            "default": "#333333"
+                        },
+                        {
+                            "type": "range",
+                            "id": "padding",
+                            "min": 10,
+                            "max": 40,
+                            "step": 5,
+                            "unit": "px",
+                            "label": "Espacement interne",
+                            "default": 20
+                        }
+                    ]
                 },
                 "stock_status": {
                     "type": "text",
