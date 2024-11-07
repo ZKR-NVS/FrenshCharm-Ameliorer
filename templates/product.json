@@ -44,22 +44,22 @@
                 "trust_badges_enhanced": {
                     "type": "text",
                     "settings": {
-                        "badge_1": "✈️ Livraison 24/48h",
+                        "badge_1": "🚚 Livraison rapide sous 24/48h",
                         "badge_2": "🔒 Paiement 100% sécurisé",
-                        "badge_3": "✅ Satisfait ou remboursé",
-                        "badge_4": "💯 Garantie authenticité",
+                        "badge_3": "💳 Paiement en 3x sans frais",
+                        "badge_4": "✨ Satisfait ou remboursé sous 30j",
                         "style": "modern",
-                        "layout": "grid",
+                        "layout": "vertical",
                         "color_scheme": "scheme-1",
-                        "padding": 20,
+                        "padding": 15,
                         "show_border": true,
-                        "show_shadow": true
+                        "show_shadow": false
                     }
                 },
                 "stock_status": {
                     "type": "text",
                     "settings": {
-                        "text": "🏃‍♂️ Dépêchez-vous ! Stock limité",
+                        "text": "⚡ Faites vite ! Les stocks s'épuisent.",
                         "text_style": "subtitle"
                     }
                 },
@@ -86,8 +86,8 @@
                 "variant_picker",
                 "quantity_selector",
                 "buy_buttons",
-                "trust_badges_enhanced",
                 "stock_status",
+                "trust_badges_enhanced",
                 "vitals_countdown_pwkbTA",
                 "description",
                 "share"
