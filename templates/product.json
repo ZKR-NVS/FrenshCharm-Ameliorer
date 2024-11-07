@@ -41,6 +41,20 @@
                         "show_gift_card_recipient": false
                     }
                 },
+                "trust_badges_enhanced": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<div class='trust-badges'><div>✈️ Livraison 24/48h</div><div>🔒 Paiement 100% sécurisé</div><div>✅ Satisfait ou remboursé</div><div>💯 Garantie authenticité</div></div>",
+                        "text_style": "body"
+                    }
+                },
+                "stock_status": {
+                    "type": "text",
+                    "settings": {
+                        "text": "🏃‍♂️ Dépêchez-vous ! Plus que {{ product.inventory_quantity }} en stock",
+                        "text_style": "subtitle"
+                    }
+                },
                 "vitals_countdown_pwkbTA": {
                     "type": "shopify:\/\/apps\/vitals\/blocks\/countdown\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
                     "settings": {}
@@ -54,13 +68,6 @@
                     "settings": {
                         "share_label": "Partager le produit"
                     }
-                },
-                "trust_badges": {
-                    "type": "text",
-                    "settings": {
-                        "text": "✈️ Livraison mondiale | 🔒 Paiement sécurisé | ✅ Garantie satisfaction",
-                        "text_style": "body"
-                    }
                 }
             },
             "block_order": [
@@ -71,7 +78,8 @@
                 "variant_picker",
                 "quantity_selector",
                 "buy_buttons",
-                "trust_badges",
+                "trust_badges_enhanced",
+                "stock_status",
                 "vitals_countdown_pwkbTA",
                 "description",
                 "share"
