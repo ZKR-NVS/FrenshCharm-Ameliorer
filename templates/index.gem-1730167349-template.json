@@ -1,0 +1,270 @@
+{
+  "sections": {
+    "image_banner_PqQiYb": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_a8HgjU": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Soyez magnifique chaque jour !<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_Chipyy": {
+          "type": "text",
+          "settings": {
+            "text": "Découvrez<strong> FRENSHCHARM<\/strong>, votre source de cosmétiques de qualité pour révéler votre beauté naturelle !",
+            "text_style": "body"
+          }
+        },
+        "buttons_W7BFAT": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Commandez ICI",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "Voir Les Offres",
+            "button_link_2": "shopify:\/\/collections\/all",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_a8HgjU",
+        "text_Chipyy",
+        "buttons_W7BFAT"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/applying-lip-balm.jpg",
+        "image_2": "shopify:\/\/shop_images\/woman-applying-lipstick.jpg",
+        "image_overlay_opacity": 60,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "collection_list_HjhYGc": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_836ywb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "accessoires-et-soins-corporels"
+          }
+        },
+        "featured_collection_pRDf48": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "beaute-et-soins-du-visage"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_836ywb",
+        "featured_collection_pRDf48"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "color_scheme": "scheme-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2,.h2 {text-align: center; text-transform: uppercase; font-size: 25px;}",
+        ".section-template--17001363177709__featured_collection-padding {background: #000000 !important;}"
+      ],
+      "settings": {
+        "title": "Vos Produit Préférer",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "blob",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_YwN6Ac": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_LVyqMe": {
+          "type": "heading",
+          "settings": {
+            "heading": "Influences culturelles sur la beauté : Célébrer la diversité et l'individualité",
+            "heading_size": "h1"
+          }
+        },
+        "text_rHJfAp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dans un monde où la beauté ne connaît pas de frontières, notre exploration commence par l'impact profond des influences culturelles sur notre perception de la beauté. Chaque culture apporte son essence unique à la vaste tapisserie de ce qui est considéré comme beau. C'est une célébration de la diversité et de l'individualité, où des perspectives variées convergent pour redéfinir et enrichir notre compréhension de ce que signifie être beau.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_tUexFe": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_LVyqMe",
+        "text_rHJfAp",
+        "button_tUexFe"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/c_77dc1749-fb32-4c65-bdb1-fd13bf4f56fb.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_3HE7yp": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_x678Di": {
+          "type": "heading",
+          "settings": {
+            "heading": "Accepter l'authenticité de soi",
+            "heading_size": "h1"
+          }
+        },
+        "text_mKt6hH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Entrez dans le royaume de la beauté naturelle, où l'essence de l'authenticité occupe le devant de la scène. Embrasser son moi authentique va au-delà des normes de beauté conventionnelles, invitant à un voyage de découverte et d'amour de soi. Dans un monde souvent dominé par des idéaux irréalistes, la célébration de la beauté naturelle devient un acte radical d'acceptation de l'individualité et de l'unicité.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_gxz8ef": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_x678Di",
+        "text_mKt6hH",
+        "button_gxz8ef"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/FOTO_0012_2.webp",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_pcmWcJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_EYPeRR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Un rituel de beauté pour un rayonnement intérieur",
+            "heading_size": "h1"
+          }
+        },
+        "text_BMPXNg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Embarquez pour un voyage transformateur en vous plongeant dans le pouvoir profond du soin de soi, un rituel qui transcende les simples routines de soin de la peau. Au-delà des améliorations extérieures, le soin de soi est une passerelle vers le rayonnement intérieur, cultivant une connexion harmonieuse entre l'esprit, le corps et l'âme. Dans un monde au rythme effréné, consacrer du temps à nourrir son moi intérieur devient une composante essentielle de la vraie beauté.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_dTpGUD": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_EYPeRR",
+        "text_BMPXNg",
+        "button_dTpGUD"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/FOTO_0006_8.webp",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner_PqQiYb",
+    "collection_list_HjhYGc",
+    "featured-collection",
+    "image_with_text_YwN6Ac",
+    "image_with_text_3HE7yp",
+    "image_with_text_pcmWcJ"
+  ]
+}
