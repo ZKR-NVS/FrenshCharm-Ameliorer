@@ -137,6 +137,27 @@
           }
         </style>
       {%- endif -%}
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const slider = document.querySelector('.announcement-bar-slider');
+          const slides = slider.querySelectorAll('.slider__slide');
+          let currentSlide = 0;
+          
+          function nextSlide() {
+            slides[currentSlide].style.display = 'none';
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].style.display = 'block';
+          }
+          
+          // Masquer tous les slides sauf le premier
+          slides.forEach((slide, index) => {
+            if (index !== 0) slide.style.display = 'none';
+          });
+          
+          // Démarrer le défilement automatique
+          setInterval(nextSlide, {{ section.settings.change_slides_speed | times: 1000 }});
+        });
+      </script>
     {%- endif -%}
     <div class="localization-wrapper">
       {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
