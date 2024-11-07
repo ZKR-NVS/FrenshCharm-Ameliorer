@@ -26,70 +26,75 @@
     {%- if section.settings.show_social and social_icons -%}
       {%- render 'social-icons' -%}
     {%- endif -%}
-    {%- if section.blocks.size > 1 -%}
-      <div class="announcement-bar-slider" role="region" aria-label="{{ 'sections.header.announcement' | t }}">
+    {%- if section.blocks.size > 0 -%}
+      <div class="announcement-bar color-{{ section.settings.color_scheme }}" role="region" aria-label="{{ 'sections.header.announcement' | t }}">
         <div class="page-width">
-          {%- for block in section.blocks -%}
-            <div class="announcement-bar__message h5 slider__slide" {{ block.shopify_attributes }}>
-              {%- if block.settings.link != blank -%}
-                <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
-              {%- endif -%}
-                <p>{{ block.settings.text | escape }}</p>
-              {%- if block.settings.link != blank -%}
-                </a>
-              {%- endif -%}
-            </div>
-          {%- endfor -%}
+          <div class="announcement-slider">
+            {%- for block in section.blocks -%}
+              <div class="announcement-slide{% if forloop.first %} active{% endif %}" {{ block.shopify_attributes }}>
+                {%- if block.settings.link != blank -%}
+                  <a href="{{ block.settings.link }}" class="announcement-bar__link">
+                {%- endif -%}
+                  <p class="announcement-bar__message">
+                    {{ block.settings.text | escape }}
+                  </p>
+                {%- if block.settings.link != blank -%}
+                  </a>
+                {%- endif -%}
+              </div>
+            {%- endfor -%}
+          </div>
         </div>
       </div>
 
       <style>
-        .announcement-bar-slider {
-          overflow: hidden;
+        .announcement-bar {
+          background-color: {{ section.settings.background }};
+          padding: 10px 0;
         }
-        .announcement-bar__message {
+        .announcement-slider {
+          position: relative;
           text-align: center;
-          padding: 10px;
-          margin: 0;
-          transition: opacity 0.5s ease-in-out;
         }
-        .slider__slide {
-          opacity: 0;
-          position: absolute;
+        .announcement-slide {
+          display: none;
           width: 100%;
         }
-        .slider__slide.active {
-          opacity: 1;
-          position: relative;
+        .announcement-slide.active {
+          display: block;
+        }
+        .announcement-bar__message {
+          margin: 0;
+          padding: 0;
+          color: {{ section.settings.text_color }};
+        }
+        .announcement-bar__link {
+          text-decoration: none;
+          color: inherit;
         }
       </style>
 
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          const slides = document.querySelectorAll('.slider__slide');
-          let currentSlide = 0;
-          
-          function showSlide(index) {
-            slides.forEach(slide => {
-              slide.classList.remove('active');
-            });
-            slides[index].classList.add('active');
-          }
-          
-          function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-          }
-          
-          // Afficher le premier slide
-          showSlide(0);
-          
-          // Démarrer le défilement si auto_rotate est activé
-          if ({{ section.settings.auto_rotate | json }}) {
-            setInterval(nextSlide, {{ section.settings.change_slides_speed | times: 1000 }});
-          }
-        });
-      </script>
+      {%- if section.blocks.size > 1 and section.settings.auto_rotate -%}
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.announcement-slide');
+            let currentSlide = 0;
+            const speed = {{ section.settings.change_slides_speed }};
+
+            function showSlide(index) {
+              slides.forEach(slide => slide.classList.remove('active'));
+              slides[index].classList.add('active');
+            }
+
+            if (slides.length > 1) {
+              setInterval(() => {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+              }, speed * 1000);
+            }
+          });
+        </script>
+      {%- endif -%}
     {%- endif -%}
     <div class="localization-wrapper">
       {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
@@ -119,9 +124,8 @@
 
 {% schema %}
 {
-  "name": "t:sections.announcement-bar.name",
-  "max_blocks": 12,
-  "class": "announcement-bar-section",
+  "name": "Barre d'annonce",
+  "max_blocks": 5,
   "settings": [
     {
       "type": "checkbox",
@@ -132,12 +136,24 @@
     {
       "type": "range",
       "id": "change_slides_speed",
-      "min": 3,
+      "min": 2,
       "max": 10,
       "step": 1,
       "unit": "s",
-      "label": "Vitesse de changement",
+      "label": "Changer toutes les",
       "default": 5
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Couleur de fond",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur du texte",
+      "default": "#FFFFFF"
     }
   ],
   "blocks": [
@@ -148,8 +164,8 @@
         {
           "type": "text",
           "id": "text",
-          "default": "🔥 OFFRE LIMITÉE : -10% avec le code WELCOME10",
-          "label": "Texte de l'annonce"
+          "label": "Texte",
+          "default": "🔥 OFFRE LIMITÉE : -10% avec le code WELCOME10"
         },
         {
           "type": "url",
@@ -158,13 +174,6 @@
         }
       ]
     }
-  ],
-  "default": {
-    "blocks": [
-      {
-        "type": "announcement"
-      }
-    ]
-  }
+  ]
 }
 {% endschema %}
