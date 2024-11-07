@@ -169,6 +169,24 @@
   "name": "t:sections.announcement-bar.name",
   "max_blocks": 12,
   "class": "announcement-bar-section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "auto_rotate",
+      "label": "Rotation automatique",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "change_slides_speed",
+      "min": 3,
+      "max": 10,
+      "step": 1,
+      "unit": "s",
+      "label": "Vitesse de changement",
+      "default": 5
+    }
+  ],
   "blocks": [
     {
       "type": "announcement",
@@ -177,7 +195,7 @@
         {
           "type": "text",
           "id": "text",
-          "default": "🔥 OFFRE LIMITÉE : -10% avec le code WELCOME10 | ✈️ Livraison GRATUITE dès 50€",
+          "default": "🔥 OFFRE LIMITÉE : -10% avec le code WELCOME10",
           "label": "Texte de l'annonce"
         },
         {
