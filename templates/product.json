@@ -74,31 +74,45 @@
                             "label": "Style des badges",
                             "options": [
                                 {
-                                    "value": "simple",
-                                    "label": "Simple"
+                                    "value": "modern",
+                                    "label": "Moderne (Recommandé)"
                                 },
                                 {
-                                    "value": "bordered",
-                                    "label": "Avec bordure"
+                                    "value": "minimal",
+                                    "label": "Minimaliste"
                                 },
                                 {
-                                    "value": "filled",
-                                    "label": "Fond coloré"
+                                    "value": "elegant",
+                                    "label": "Élégant"
                                 }
                             ],
-                            "default": "simple"
+                            "default": "modern"
                         },
                         {
-                            "type": "color",
-                            "id": "background_color",
-                            "label": "Couleur de fond",
-                            "default": "#f9f9f9"
+                            "type": "select",
+                            "id": "layout",
+                            "label": "Disposition",
+                            "options": [
+                                {
+                                    "value": "grid",
+                                    "label": "Grille 2x2"
+                                },
+                                {
+                                    "value": "horizontal",
+                                    "label": "Ligne horizontale"
+                                },
+                                {
+                                    "value": "vertical",
+                                    "label": "Liste verticale"
+                                }
+                            ],
+                            "default": "grid"
                         },
                         {
-                            "type": "color",
-                            "id": "text_color",
-                            "label": "Couleur du texte",
-                            "default": "#333333"
+                            "type": "color_scheme",
+                            "id": "color_scheme",
+                            "label": "Thème de couleur",
+                            "default": "scheme-1"
                         },
                         {
                             "type": "range",
@@ -109,6 +123,18 @@
                             "unit": "px",
                             "label": "Espacement interne",
                             "default": 20
+                        },
+                        {
+                            "type": "checkbox",
+                            "id": "show_border",
+                            "label": "Afficher la bordure",
+                            "default": true
+                        },
+                        {
+                            "type": "checkbox",
+                            "id": "show_shadow",
+                            "label": "Ajouter une ombre",
+                            "default": true
                         }
                     ]
                 },
@@ -150,13 +176,8 @@
             ],
             "settings": {
                 "enable_sticky_info": true,
-                "color_scheme": "scheme-1",
                 "media_size": "medium",
-                "constrain_to_viewport": true,
-                "media_fit": "contain",
                 "gallery_layout": "thumbnail_slider",
-                "media_position": "left",
-                "image_zoom": "lightbox",
                 "mobile_thumbnails": "show",
                 "hide_variants": false,
                 "enable_video_looping": false,
