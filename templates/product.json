@@ -43,100 +43,18 @@
                 },
                 "trust_badges_enhanced": {
                     "type": "text",
-                    "settings": [
-                        {
-                            "type": "text",
-                            "id": "badge_1",
-                            "label": "Badge 1",
-                            "default": "✈️ Livraison 24/48h"
-                        },
-                        {
-                            "type": "text",
-                            "id": "badge_2",
-                            "label": "Badge 2",
-                            "default": "🔒 Paiement 100% sécurisé"
-                        },
-                        {
-                            "type": "text",
-                            "id": "badge_3",
-                            "label": "Badge 3",
-                            "default": "✅ Satisfait ou remboursé"
-                        },
-                        {
-                            "type": "text",
-                            "id": "badge_4",
-                            "label": "Badge 4",
-                            "default": "💯 Garantie authenticité"
-                        },
-                        {
-                            "type": "select",
-                            "id": "style",
-                            "label": "Style des badges",
-                            "options": [
-                                {
-                                    "value": "modern",
-                                    "label": "Moderne (Recommandé)"
-                                },
-                                {
-                                    "value": "minimal",
-                                    "label": "Minimaliste"
-                                },
-                                {
-                                    "value": "elegant",
-                                    "label": "Élégant"
-                                }
-                            ],
-                            "default": "modern"
-                        },
-                        {
-                            "type": "select",
-                            "id": "layout",
-                            "label": "Disposition",
-                            "options": [
-                                {
-                                    "value": "grid",
-                                    "label": "Grille 2x2"
-                                },
-                                {
-                                    "value": "horizontal",
-                                    "label": "Ligne horizontale"
-                                },
-                                {
-                                    "value": "vertical",
-                                    "label": "Liste verticale"
-                                }
-                            ],
-                            "default": "grid"
-                        },
-                        {
-                            "type": "color_scheme",
-                            "id": "color_scheme",
-                            "label": "Thème de couleur",
-                            "default": "scheme-1"
-                        },
-                        {
-                            "type": "range",
-                            "id": "padding",
-                            "min": 10,
-                            "max": 40,
-                            "step": 5,
-                            "unit": "px",
-                            "label": "Espacement interne",
-                            "default": 20
-                        },
-                        {
-                            "type": "checkbox",
-                            "id": "show_border",
-                            "label": "Afficher la bordure",
-                            "default": true
-                        },
-                        {
-                            "type": "checkbox",
-                            "id": "show_shadow",
-                            "label": "Ajouter une ombre",
-                            "default": true
-                        }
-                    ]
+                    "settings": {
+                        "badge_1": "✈️ Livraison 24/48h",
+                        "badge_2": "🔒 Paiement 100% sécurisé",
+                        "badge_3": "✅ Satisfait ou remboursé",
+                        "badge_4": "💯 Garantie authenticité",
+                        "style": "modern",
+                        "layout": "grid",
+                        "color_scheme": "scheme-1",
+                        "padding": 20,
+                        "show_border": true,
+                        "show_shadow": true
+                    }
                 },
                 "stock_status": {
                     "type": "text",
