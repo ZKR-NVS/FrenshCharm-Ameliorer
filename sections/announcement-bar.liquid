@@ -150,10 +150,17 @@
           function showSlide(index) {
             slides.forEach((slide, i) => {
               if (i === index) {
+                slide.style.opacity = '0';
                 slide.style.display = 'block';
+                setTimeout(() => {
+                  slide.style.opacity = '1';
+                }, 50);
                 slide.setAttribute('aria-hidden', 'false');
               } else {
-                slide.style.display = 'none';
+                slide.style.opacity = '0';
+                setTimeout(() => {
+                  slide.style.display = 'none';
+                }, 500);
                 slide.setAttribute('aria-hidden', 'true');
               }
             });
@@ -269,3 +276,24 @@
   }
 }
 {% endschema %}
+
+<style>
+  .announcement-bar__message {
+    animation: fadeInOut 1s ease-in-out;
+  }
+  
+  .announcement-bar__message .emoji {
+    display: inline-block;
+    animation: bounce 1s infinite;
+  }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+</style>
