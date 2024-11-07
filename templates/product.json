@@ -44,14 +44,14 @@
                 "trust_badges_enhanced": {
                     "type": "text",
                     "settings": {
-                        "text": "<div class='trust-badges'><div>✈️ Livraison 24/48h</div><div>🔒 Paiement 100% sécurisé</div><div>✅ Satisfait ou remboursé</div><div>💯 Garantie authenticité</div></div>",
+                        "text": "✈️ Livraison 24/48h\n🔒 Paiement 100% sécurisé\n✅ Satisfait ou remboursé\n💯 Garantie authenticité",
                         "text_style": "body"
                     }
                 },
                 "stock_status": {
                     "type": "text",
                     "settings": {
-                        "text": "🏃‍♂️ Dépêchez-vous ! Plus que {{ product.inventory_quantity }} en stock",
+                        "text": "🏃‍♂️ Dépêchez-vous ! Stock limité",
                         "text_style": "subtitle"
                     }
                 },
